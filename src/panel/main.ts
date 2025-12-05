@@ -183,14 +183,14 @@ function recoverState(
 
         try {
             var newPet = addPetToPanel(
-                p.petType ?? PetType.cat,
+                p.petType ?? PetType.panda,
                 basePetUri,
                 p.petColor ?? PetColor.brown,
                 petSize,
                 parseInt(p.elLeft ?? '0'),
                 parseInt(p.elBottom ?? '0'),
                 floor,
-                p.petName ?? randomName(p.petType ?? PetType.cat),
+                p.petName ?? randomName(p.petType ?? PetType.panda),
                 stateApi,
             );
             allPets.push(newPet);

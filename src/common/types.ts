@@ -24,30 +24,10 @@ export const enum PetColor {
 }
 
 export const enum PetType {
-    bunny = 'bunny',
-    cat = 'cat',
-    chicken = 'chicken',
-    clippy = 'clippy',
-    cockatiel = 'cockatiel',
-    crab = 'crab',
     dog = 'dog',
-    deno = 'deno',
-    fox = 'fox',
-    frog = 'frog',
-    horse = 'horse',
-    mod = 'mod',
-    morph = 'morph',
     panda = 'panda',
     rat = 'rat',
-    rocky = 'rocky',
-    rubberduck = 'rubber-duck',
-    skeleton = 'skeleton',
-    snail = 'snail',
-    snake = 'snake',
-    squirrel = 'squirrel',
-    totoro = 'totoro',
-    turtle = 'turtle',
-    zappy = 'zappy',
+    pumpy = 'pumpy',
     null = 'null',
 }
 
@@ -99,30 +79,10 @@ export class WebviewMessage {
 }
 
 export const ALL_PETS = [
-    PetType.bunny,
-    PetType.cat,
-    PetType.chicken,
-    PetType.clippy,
-    PetType.cockatiel,
-    PetType.crab,
     PetType.dog,
-    PetType.deno,
-    PetType.fox,
-    PetType.frog,
-    PetType.horse,
-    PetType.mod,
-    PetType.morph,
     PetType.panda,
     PetType.rat,
-    PetType.rocky,
-    PetType.rubberduck,
-    PetType.skeleton,
-    PetType.snail,
-    PetType.snake,
-    PetType.squirrel,
-    PetType.totoro,
-    PetType.turtle,
-    PetType.zappy,
+    PetType.pumpy,
 ];
 export const ALL_COLORS = [
     PetColor.black,

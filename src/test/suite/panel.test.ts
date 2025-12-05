@@ -88,7 +88,7 @@ class MockState implements VscodeStateApi {
 mockPanelWindow();
 
 import * as panel from '../../panel/main';
-import { Cat } from '../../panel/pets/cat';
+import { Panda } from '../../panel/pets/panda';
 
 suite('Pets Test Suite', () => {
     void vscode.window.showInformationMessage('Start all tests.');
@@ -103,7 +103,7 @@ suite('Pets Test Suite', () => {
             'div',
         ) as HTMLDivElement;
         const testPet = pets.createPet(
-            'cat',
+            'panda',
             petImageEl,
             petDivEl,
             petSpeechEl,
@@ -114,8 +114,8 @@ suite('Pets Test Suite', () => {
             0,
             'Jerry',
         );
-        assert.ok(testPet instanceof Cat);
-        assert.equal(testPet.emoji, '🐱');
+        assert.ok(testPet instanceof Panda);
+        assert.equal(testPet.emoji, '🐼');
         assert.equal(testPet.name, 'Jerry');
 
         const testPetElement = new pets.PetElement(
@@ -124,10 +124,10 @@ suite('Pets Test Suite', () => {
             petSpeechEl,
             testPet,
             PetColor.brown,
-            PetType.cat,
+            PetType.panda,
         );
         assert.strictEqual(testPetElement.color, PetColor.brown);
-        assert.strictEqual(testPetElement.type, PetType.cat);
+        assert.strictEqual(testPetElement.type, PetType.panda);
 
         assert.strictEqual(collection.locate('Jerry'), undefined);
 
@@ -221,7 +221,7 @@ suite('Pets Test Suite', () => {
             ColorThemeKind.dark,
             PetColor.black,
             PetSize.large,
-            PetType.cat,
+            PetType.panda,
             false,
             false,
             mockState,
@@ -247,7 +247,7 @@ suite('Pets Test Suite', () => {
             ColorThemeKind.dark,
             PetColor.black,
             PetSize.large,
-            PetType.cat,
+            PetType.panda,
             false,
             false,
             mockState,
